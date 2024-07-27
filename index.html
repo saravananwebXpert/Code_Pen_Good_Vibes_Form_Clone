@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Vibes Form</title>
+    <link rel="shortcut icon" type="x-icon" href="./Image/logo.ico" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./article.css" />
+    <script
+      src="https://kit.fontawesome.com/d128046b07.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div id="nav-div1">
+        <img src="./Image/logo.png" alt="" />
+      </div>
+      <div id="nav-div2">
+        <h3 id="logoname">Good Vibes Form</h3>
+        <span>Laurence</span>
+        <span id="follow">+ Follow</span>
+      </div>
+      <div id="nav-div3">
+        <button id="heart">
+          <i class="fa-solid fa-heart"></i>
+        </button>
+        <button id="view">View in Editor</button>
+        <button id="pin">
+          <i class="fa-solid fa-thumbtack"></i>
+        </button>
+      </div>
+      <img src="./Image/endlogo.png" alt="" />
+    </nav>
+
+    <article>
+      <h1 id="head">Good Vibes Form</h1>
+      <form action="#" method="post">
+        <p>Tell us something positive that happened to you today.</p>
+        <table border="0">
+          <tr id="tr1">
+            <td class="right">
+              <label for="name">Name</label>
+            </td>
+            <td>
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </td>
+          </tr>
+          <tr id="tr2">
+            <td class="right">
+              <label for="email">Email</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your Email address"
+                required
+              />
+            </td>
+          </tr>
+          <tr id="tr3">
+            <td class="right">
+              <label for="scale">On a scale of 1-10, how good was it?</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                id="scale"
+                placeholder="Enter a number between 1 to 10"
+              />
+            </td>
+          </tr>
+          <tr id="tr4">
+            <td class="right">
+              <label for="selection">Where did it happen?</label>
+            </td>
+            <td id="select">
+              <select name="at home" id="selection">
+                <option value="At Home">At Home</option>
+                <option value="On my commute">On my commute</option>
+                <option value="At work">At work</option>
+                <option value="on the street">On the street</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr id="tr5">
+            <td class="right">
+              <label for="happen">At what time of day did it happen?</label>
+            </td>
+            <td>
+              <input
+                id="happen"
+                name="timing"
+                value="Morning"
+                type="radio"
+              />Morning <br />
+              <input
+                id="happen"
+                name="timing"
+                value="Afternoon"
+                type="radio"
+              />Afternoon <br />
+              <input
+                id="happen"
+                name="timing"
+                value="Evening"
+                type="radio"
+              />Evening <br />
+            </td>
+          </tr>
+          <tr id="tr6">
+            <td class="right">
+              <label for="emotions[]">
+                What emotions did you experience? <br />
+                (Select all that apply)
+              </label>
+            </td>
+            <td>
+              <input
+                id="emotions[]"
+                name="emotion"
+                type="checkbox"
+                value="Excited"
+              />Excited <br />
+              <input
+                id="emotions[]"
+                name="emotion"
+                type="checkbox"
+                value="Humbled"
+              />Humbled <br />
+              <input
+                id="emotions[]"
+                name="emotion"
+                type="checkbox"
+                value="Elated"
+              />Elated <br />
+              <input
+                id="emotions[]"
+                name="emotion"
+                type="checkbox"
+                value="Loved"
+              />Loved <br />
+              <input
+                id="emotions[]"
+                name="emotion"
+                type="checkbox"
+                value="Enthusiastic"
+              />Enthusiastic <br />
+            </td>
+          </tr>
+          <tr id="tr7">
+            <td class="right">
+              <label for="experience">
+                Please describe your positive experience.
+              </label>
+            </td>
+            <td>
+              <textarea
+                name="feedback"
+                id="feebback"
+                cols="30"
+                rows="3"
+                placeholder="Enter your experience here"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <button id="submit">submit</button>
+      </form>
+    </article>
+  </body>
+</html>
